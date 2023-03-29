@@ -1,3 +1,5 @@
+// deposit and withdraw money. throws exception when balance < 500 after withdrawing and if new_balance is 0
+
 import java.util.Scanner;
 
 class NotEnoughMoneyException extends ArithmeticException {
