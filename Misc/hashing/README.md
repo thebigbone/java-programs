@@ -1,6 +1,6 @@
 ### To run the program, do the following:
 
-1. Compile the Hashing.java file using the javac command, including the path to the commons-codec-x.x.jar file in the classpath:
+1. Compile the Hashing.java file using the javac command, including the path to the commons-codec-1.15.jar file in the classpath:
     ```shell
     javac -cp lib/commons-codec-1.15.jar Hashing.java
     ```
