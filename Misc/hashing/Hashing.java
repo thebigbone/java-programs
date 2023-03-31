@@ -16,7 +16,7 @@ class Hashes {
                 System.out.println("Invalid input! Please enter a valid string.");
                 System.exit(0);
             }
-        throw new InputMismatchException();
+        //throw new InputMismatchException();
         }
         
         catch (InputMismatchException e) {
@@ -40,6 +40,11 @@ class Hashes {
         result = DigestUtils.sha256Hex(input);
         System.out.println("SHA256: " + result);
     }
+
+    void sha1() {
+        result = DigestUtils.sha1Hex(input);
+        System.out.println("SHA1: " + result);
+    }
 }
 
 public class Hashing {
@@ -48,7 +53,7 @@ public class Hashing {
         int choose;
         Scanner scan = new Scanner(System.in);        
         h.get_string();
-        System.out.println("Enter which hashing algorithm to use:\n 1. MD5\n 2. SHA256\n");
+        System.out.println("Enter which hashing algorithm to use:\n 1. MD5\n 2. SHA256 \n 3. SHA1");
         choose = scan.nextInt();
 
         switch(choose) {
@@ -68,6 +73,9 @@ public class Hashing {
                 break;
             case 2:
                 h.sha256();
+                break;
+            case 3:
+                h.sha1();
                 break;
             default:
                 System.out.println("Something went wrong! Please try again.");
